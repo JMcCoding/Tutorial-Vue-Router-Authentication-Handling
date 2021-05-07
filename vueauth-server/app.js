@@ -6,10 +6,10 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const config = require('./config')
-const database = require('./db')
+const Database = require('./db')
 
 // Instantiation
-const db = new database('sqlitedb')
+const db = new Database('sqlitedb')
 const app = express()
 const router = express.Router()
 const port = process.env.PORT || config.port
