@@ -1,0 +1,11 @@
+{
+  "name": "vueauth-server",
+  "version": "1.0.0",
+  "description": " A project following Chris Nwamba's tutorial named \"How To Set Up Vue.js Authentication and Route Handling Using vue-router\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JMcCoding",
+  "license": "ISC"
+}
