@@ -2,8 +2,8 @@
   <div>
     <h4>Login</h4>
     <form>
-      <label for="email">E-Mail Address</label>
       <div>
+        <label for="email">E-Mail Address</label>
         <input id="email" type="email" v-model="email" required autofocus />
       </div>
       <div>
@@ -11,7 +11,7 @@
         <input id="password" type="password" v-model="password" required />
       </div>
       <div>
-        <button type="submit" v-on:click="handleSubmit" value="Login" />
+        <button type="submit" v-on:click="handleSubmit">Login</button>
       </div>
     </form>
   </div>
@@ -26,7 +26,7 @@ export default {
     }
   },
   methods: {
-    handleSubmit: e => {
+    handleSubmit (e) {
       e.preventDefault()
       if (this.password.length > 0) {
         this.$http.post('http://localhost:3000/login', {
